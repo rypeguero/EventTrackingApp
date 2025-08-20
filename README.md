@@ -56,7 +56,7 @@ app/
 
 | Login Screen | Event List | Add Event |
 |--------------|------------|-----------|
-| ![Login](https://via.placeholder.com/200x400.png?text=Logi) | ![Events](https://via.placeholder.com/200x400.png?text=Event+List) | ![Add](https://via.placeholder.com/200x400.png?text=Add+Event) |
+| ![Login](/EventtrackingappScreenshots/login.png) | ![Events](/EventtrackingappScreenshots/eventlist.png) | ![Add](/EventtrackingappScreenshots/editevent.png) |
 
 ---
 
