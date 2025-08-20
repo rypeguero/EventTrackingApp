@@ -79,6 +79,23 @@ app/
 - ☁️ Cloud backup & sync  
 
 ---
+# 📱 Project Three Reflection
+
+## ✨ What I Learned
+One thing I have learned from my experience with Project Three is how important it is to carefully align the database structure with the app’s logic. At first, my app was crashing because the database columns didn’t match the event fields. Debugging and fixing this gave me a better understanding of how to maintain consistency across activities, adapters, and database helpers. I also learned how crucial testing is at each step of the development cycle—especially when adding new features like delete functionality or SMS permissions.
+
+## ❓ One Question I Still Have
+One question I still have about developing and launching a mobile app is:  
+👉 How do professional developers handle scaling an app once it moves from prototype or classroom project to thousands of users on the Google Play Store?  
+
+This question relates to performance, security, and database management—things I want to get better at as I continue to learn.
+
+## 🚀 Applying Learning in the Future
+One way I will apply my learning from Project Three in the future is by **building apps iteratively**. I now understand that starting with a simple version, testing, and then adding features step by step leads to a more stable and maintainable app. I will also continue to use version control (like GitHub) to track changes, share my work, and document my learning.
+
+## 📈 Looking Ahead
+This project taught me the value of user-centered design, secure coding practices, and clear documentation. I plan to continue improving my mobile development skills and eventually publish my apps to the Google Play Store as part of my professional portfolio. Doing so will give me concrete examples of real-world projects to show to employers and demonstrate my ability to complete a full software development lifecycle.
+
 
 ## 🧑‍💻 Author
 
