@@ -64,7 +64,7 @@ app/
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/event-tracking-app.git
+   git clone https://github.com/rypeguero/event-tracking-app.git
    ```
 2. Open the project in **Android Studio**  
 3. Sync Gradle and build the project  
