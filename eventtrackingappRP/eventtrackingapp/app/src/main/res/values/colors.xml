@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The App's Official Color Palette -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- A nice, vibrant orange for buttons and interactive elements -->
+    <color name="app_orange">#FF9800</color>
+    <!-- A darker orange for status bars or pressed states -->
+    <color name="app_orange_dark">#F57C00</color>
+</resources>

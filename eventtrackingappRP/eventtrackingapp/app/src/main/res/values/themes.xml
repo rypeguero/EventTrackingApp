@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Eventtrackingapp" parent="Theme.Material3.DayNight.NoActionBar">
+            <!-- Primary brand color. This will be your ORANGE. -->
+            <!-- It's used for the app bar, main buttons, and other key UI elements. -->
+            <item name="colorPrimary">@color/app_orange</item>
+            <item name="colorPrimaryVariant">@color/app_orange_dark</item>
+            <item name="colorOnPrimary">@color/white</item> <!-- Text on top of orange buttons will be white -->
+
+            <!-- Secondary brand color. We'll also make it orange for consistency. -->
+            <item name="colorSecondary">@color/app_orange</item>
+            <item name="colorSecondaryVariant">@color/app_orange_dark</item>
+            <item name="colorOnSecondary">@color/white</item>
+
+            <!-- This sets the main background color of your app's screens to WHITE. -->
+            <item name="android:colorBackground">@color/white</item>
+
+            <!-- This sets the default text color for your app to BLACK. -->
+            <item name="android:textColor">@color/black</item>
+
+            <!-- Status bar color. -->
+            <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+            <!-- Customize your theme here. -->
+        </style>
+    <style name="Theme.Eventtrackingapp" parent="Base.Theme.Eventtrackingapp" />
+</resources>
