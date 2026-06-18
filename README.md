@@ -1,105 +1,110 @@
-# 📅 Event Tracking App
+# Event Tracking App
 
-An Android application built as part of **CS-360: Mobile Architecture and Programming**.  
-This app allows users to **register, log in, create, edit, and delete events**, with optional SMS reminders.
+This repository contains an Android mobile application developed for **CS 360: Mobile Architecture and Programming**. The app allows users to register, log in, create, edit, delete, and manage personal events with optional SMS reminder functionality.
 
----
+## Project Overview
 
-## 🚀 Features
+The goal of this project was to design and build a complete mobile application using Android development practices. The app focuses on user-centered design, persistent local storage, authentication flow, event management, and mobile permission handling.
 
-- 👤 **User Authentication**: Register & log in securely  
-- 📝 **Event Management**: Add, edit, and delete events  
-- ⏰ **Alerts**: Set reminders before events  
-- 💬 **SMS Notifications**: Option to send reminders via SMS  
-- 🎨 **Modern UI**: Clean design with Material components  
+## What This Project Demonstrates
 
----
+- Android application development with Java
+- User registration and login flow
+- SQLite database design and local data persistence
+- Create, read, update, and delete functionality for event records
+- Event reminders and optional SMS notification support
+- Android XML layouts and Material-style interface components
+- Testing and debugging across activities, adapters, and database helper logic
 
-## 📂 Project Structure
+## Tech Stack
 
-```
+- Java
+- Android Studio
+- SQLite
+- Android XML layouts
+- RecyclerView
+- CardView
+- Material Design Components
+
+## Core Features
+
+### User Authentication
+
+Users can register and log in before accessing the event management features.
+
+### Event Management
+
+Authenticated users can create, edit, delete, and view events using a structured event list interface.
+
+### Local Database Storage
+
+The app uses SQLite to store user and event information locally on the device.
+
+### SMS Reminder Option
+
+The app includes optional SMS reminder functionality and demonstrates Android permission handling for notification-related features.
+
+## Project Structure
+
+```text
 app/
- ┣ java/com/example/eventtrackingapp/
- ┃ ┣ AddEditEventActivity.java
- ┃ ┣ DBHelper.java
- ┃ ┣ Event.java
- ┃ ┣ EventAdapter.java
- ┃ ┣ LoginActivity.java
- ┃ ┣ MainActivity.java
- ┃ ┣ RegisterActivity.java
- ┣ res/layout/
- ┃ ┣ activity_add_edit_event.xml
- ┃ ┣ activity_event_list.xml
- ┃ ┣ activity_login.xml
- ┃ ┣ activity_register.xml
- ┃ ┣ grid_item_event.xml
- ┃ ┣ grid_item_layout.xml
- ┃ ┣ activity_settings.xml
- ┣ AndroidManifest.xml
+  src/main/
+    java/com/example/eventtrackingapp/
+      AddEditEventActivity.java
+      DBHelper.java
+      Event.java
+      EventAdapter.java
+      LoginActivity.java
+      MainActivity.java
+      RegisterActivity.java
+    res/layout/
+      activity_add_edit_event.xml
+      activity_event_list.xml
+      activity_login.xml
+      activity_register.xml
+      activity_settings.xml
+      grid_item_event.xml
+      grid_item_layout.xml
+    AndroidManifest.xml
 ```
 
----
+## Screenshots
 
-## 🛠️ Tech Stack
+| Login Screen | Event List | Add/Edit Event |
+|--------------|------------|----------------|
+| ![Login](EventtrackingappScreenshots/login.png) | ![Events](EventtrackingappScreenshots/eventlist.png) | ![Add/Edit](EventtrackingappScreenshots/editevent.png) |
 
-- **Language**: Java ☕  
-- **Database**: SQLite 📦  
-- **UI**: Android XML layouts 🎨  
-- **Libraries**:  
-  - RecyclerView  
-  - CardView  
-  - Material Design Components  
+## Running the Project
 
----
+1. Clone the repository:
 
-## 📸 Screenshots
+```bash
+git clone https://github.com/rypeguero/EventTrackingApp.git
+```
 
-| Login Screen | Event List | Add Event |
-|--------------|------------|-----------|
-| ![Login](/EventtrackingappScreenshots/login.png) | ![Events](/EventtrackingappScreenshots/eventlist.png) | ![Add](/EventtrackingappScreenshots/editevent.png) |
+2. Open the project in Android Studio.
+3. Sync Gradle dependencies.
+4. Run the app on an Android emulator or physical Android device.
 
----
+## Security and Repository Hygiene
 
-## ⚙️ Installation
+This repository is organized for portfolio review. Local build files, generated outputs, IDE-specific metadata, signing keys, and local environment files should not be committed. The `.gitignore` file is configured to keep the repository focused on source code and documentation.
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/rypeguero/event-tracking-app.git
-   ```
-2. Open the project in **Android Studio**  
-3. Sync Gradle and build the project  
-4. Run on emulator or physical device  
+## Reflection
 
----
+This project strengthened my understanding of mobile application architecture, database-driven Android apps, activity navigation, permission handling, and iterative debugging. One major lesson was the importance of keeping the database schema aligned with the app's logic, especially when adding new functionality such as event deletion and SMS reminders.
 
-## 🚧 Future Improvements
+## Future Improvements
 
-- 🔔 Push notifications instead of SMS  
-- 📍 Location-based event triggers  
-- ☁️ Cloud backup & sync  
+- Replace SMS reminders with push notifications
+- Add cloud backup and sync
+- Improve password handling for a production-ready version
+- Add automated UI and unit tests
+- Add calendar integration
 
----
-# 📱 Project Three Reflection
+## Portfolio Framing
 
-## ✨ What I Learned
-One thing I have learned from my experience with Project Three is how important it is to carefully align the database structure with the app’s logic. At first, my app was crashing because the database columns didn’t match the event fields. Debugging and fixing this gave me a better understanding of how to maintain consistency across activities, adapters, and database helpers. I also learned how crucial testing is at each step of the development cycle—especially when adding new features like delete functionality or SMS permissions.
+This project demonstrates a full mobile development workflow: planning, UI design, local database implementation, user authentication flow, event CRUD functionality, permission handling, debugging, and documentation.
 
-## ❓ One Question I Still Have
-One question I still have about developing and launching a mobile app is:  
-👉 How do professional developers handle scaling an app once it moves from prototype or classroom project to thousands of users on the Google Play Store?  
-
-This question relates to performance, security, and database management—things I want to get better at as I continue to learn.
-
-## 🚀 Applying Learning in the Future
-One way I will apply my learning from Project Three in the future is by **building apps iteratively**. I now understand that starting with a simple version, testing, and then adding features step by step leads to a more stable and maintainable app. I will also continue to use version control (like GitHub) to track changes, share my work, and document my learning.
-
-## 📈 Looking Ahead
-This project taught me the value of user-centered design, secure coding practices, and clear documentation. I plan to continue improving my mobile development skills and eventually publish my apps to the Google Play Store as part of my professional portfolio. Doing so will give me concrete examples of real-world projects to show to employers and demonstrate my ability to complete a full software development lifecycle.
-
-
-## 🧑‍💻 Author
-
-- **Ryan Peguero**   
-- 🌐 [GitHub Profile](https://github.com/rypeguero)
-
----
+**Author:** Ryan Peguero  
+**Course:** CS 360 Mobile Architecture and Programming
